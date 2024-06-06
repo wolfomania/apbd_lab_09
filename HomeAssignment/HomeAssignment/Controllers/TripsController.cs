@@ -110,7 +110,7 @@ namespace HomeAssignment.Controllers
                 IdClient = existingClient.IdClient,
                 IdTrip = idTrip,
                 RegisteredAt = DateTime.Now,
-                PaymentDate = addRequest.PaymentDate
+                PaymentDate = addRequest.paymentDate
             };
             context.ClientTrips.Add(clientTrip);
             await context.SaveChangesAsync();
